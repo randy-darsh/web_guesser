@@ -1,11 +1,26 @@
 <html>
   <head>
+  <style>
+    body {
+      background: red;
+    }
+  </style>
     Web Guesser
   </head>
     <body>
     <% if message == "Way too low!" || message == "Way too high!" %>
     <% elsif message == "Too low!" || message == "Too high!" %>
+    <style>
+    body {
+      background: pink;
+    }
+    </style>
     <% elsif message == "Correct! The secret number was #{SECRET_NUMBER}" %>
+    <style>
+    body {
+      background: green;
+    }
+    </style>
     <% end %>
     <p>
       <%= message %>
